@@ -10,19 +10,22 @@ An AI-powered data agent that processes data from CSV files or Google Sheets, pe
 - Perform entity extraction and search using LLMs.
 - Display and download processed data.
 
-## Screenshots
 
-### Data Upload
+## Data Upload
 ![Data Upload](assets/data-upload.png)
 *Upload your CSV files or connect to Google Sheets*
 
-### Search Interface
-![Search Interface](assets/search-interface.png)
-*Perform powerful searches using AI*
+## Data Summary
+![Data Upload](assets/data-customize.png)
+*Select any number of coloumns as you wish*
 
-### Results View
+## Search Interface
+![Search Interface](assets/search-interface.png)
+*Select the range of data you need to process along with multiple query option*
+
+## Results View
 ![Results View](assets/results-view.png)
-*View and analyze processed data*
+*Choose the export option and view and analyze processed data*
 
 ## Quick Start Guide
 
