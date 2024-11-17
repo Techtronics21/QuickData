@@ -54,10 +54,10 @@ QucikData is an AI-powered data agent that processes data from CSV files or Goog
 ## Demo Video
 
 <details open>
-<summary>Watch our quick demo video</summary>
+<summary>Watch the quick demo video</summary>
 <br>
-<a href="https://youtu.be/your-video-id">
-    <img src="assets/video-thumbnail.png" alt="Demo Video" width="100%"/>
+<a href="https://www.loom.com/share/4e832bcaf3094614ab7683caefe49090?sid=19e8459e-99e2-447d-8f2d-8907610cdc27">
+    <img src="thumbnail.png" alt="Demo Video" width="100%"/>
 </a>
 </details>
 
