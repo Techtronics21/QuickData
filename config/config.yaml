@@ -1,0 +1,18 @@
+api_keys:
+  groq: "${GROQ_API_KEY}" 
+  serpapi: "${SERPAPI_API_KEY}"
+
+google_sheets:
+  credentials_file: "./config/credentials.json"
+  scopes: ["https://www.googleapis.com/auth/spreadsheets"]
+
+search:
+  rate_limit: 5 # requests per minute
+  rate_limit_period: 60 # in seconds
+  max_results: 3
+  retry_attempts: 3
+
+llm:
+  model: "mixtral-8x7b-32768"  # Groq model
+  temperature: 0.7
+  max_tokens: 500
