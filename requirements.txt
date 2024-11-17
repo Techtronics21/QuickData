@@ -18,6 +18,7 @@ google-auth-httplib2==0.2.0
 google-auth-oauthlib==1.2.1
 google-generativeai==0.8.3
 googleapis-common-protos==1.66.0
+groq==0.4.2
 grpcio==1.67.1
 grpcio-status==1.67.1
 gspread==6.1.4
