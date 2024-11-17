@@ -1,10 +1,10 @@
 <div align="center">
 
-# QucikData
+# QuickkData
 
 
 
-QucikData is an AI-powered data agent that processes data from CSV files or Google Sheets, performs searches using LLMs, and provides insights through a Streamlit interface. 
+QuickData is an AI-powered data agent that processes data from CSV files or Google Sheets, performs searches using LLMs, and provides insights through a Streamlit interface. 
 
 [Features](#features) • [Screenshots](#screenshots) • [Demo](#demo-video) • [User Guide](#user-guide) • [Setup](#setup) • [Run](#running-the-application) • [Testing](#testing)
 
