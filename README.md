@@ -2,13 +2,11 @@
 
 # QucikData
 
-[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.40+-red.svg)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-An AI-powered data agent that processes data from CSV files or Google Sheets, performs searches using LLMs, and provides insights through a Streamlit interface.
 
-[Features](#features) • [Screenshots](#screenshots) • [Quick Start](#quick-start-guide) • [Setup](#setup) • [Documentation](#project-structure)
+QucikData is an AI-powered data agent that processes data from CSV files or Google Sheets, performs searches using LLMs, and provides insights through a Streamlit interface. 
+
+[Features](#features) • [Screenshots](#screenshots) • [Demo](#demo-video) • [User Guide](#user-guide) • [Setup](#setup) • [Run](#running-the-application) • [Testing](#testing)
 
 <img src="assets/main-dashboard.png" alt="Main Dashboard" width="100%"/>
 
@@ -18,34 +16,42 @@ An AI-powered data agent that processes data from CSV files or Google Sheets, pe
 
 ## Features
 
-- 📊 Upload CSV files or connect to Google Sheets
-- 🔍 Perform entity extraction and search using LLMs
-- 📈 Display and download processed data
+- Upload CSV files or connect to Google Sheets
+- Perform entity extraction and search using LLMs
+- Display and download processed data
+- Multiple Column Selection with Preview (Added utility)
+- Row Range Selection via Slider Interface (Added utility)
+- Multiple Queries for a single entity (Added utility)
+- Export result to google sheets via google sheets API integration (Added utility)
 
 ## Screenshots
 
-<table style="border-spacing: 0 20px; border-collapse: separate;">
-  <tr>
-    <td width="100%" style="padding: 20px 0;">
-      <img src="assets/data-upload.png" alt="Data Upload" width="100%"/>
-      <p align="center"><i>Data Upload Interface</i></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="100%" style="padding: 20px 0;">
-      <img src="assets/search-interface.png" alt="Search Interface" width="100%"/>
-      <p align="center"><i>Search Interface</i></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="100%" style="padding: 20px 0;">
-      <img src="assets/results-view.png" alt="Results View" width="100%"/>
-      <p align="center"><i>Results View</i></p>
-    </td>
-  </tr>
-</table>
 
-## Quick Start Guide
+  <tr>
+    <td width="100%" style="padding: 0;">
+      <img src="assets/data-upload.png" alt="Data Upload" width="100%"/>
+      <p style="margin-top: 150px; margin-bottom: 150px; text-align: center;"><i>Data Upload Interface</i></p>
+    </td>
+  </tr>
+
+
+  <tr style="margin-bottom: 100px;">
+    <td width="100%" style="padding: 0;">
+      <img src="assets/search-interface.png" alt="Search Interface" width="100%"/>
+      <p style="margin-top: 150px; margin-bottom: 150px; text-align: center;"><i>Search Interface</i></p>
+    </td>
+  </tr>
+
+ 
+  <tr style="margin-bottom: 100px;">
+    <td width="100%" style="padding: 0;">
+      <img src="assets/results-view.png" alt="Results View" width="100%"/>
+      <p style="margin-top: 150px; margin-bottom: 150px; text-align: center;"><i>Results View</i></p>
+    </td>
+  </tr>
+
+
+## Demo Video
 
 <details open>
 <summary>Watch our quick demo video</summary>
@@ -55,20 +61,25 @@ An AI-powered data agent that processes data from CSV files or Google Sheets, pe
 </a>
 </details>
 
-### 📥 Step 1: Upload Data
+## User Guide
+<details>
+<summary>Click to expand the user guide</summary>
+  
+### Step 1: Upload Data
 1. Launch the application
 2. Click "Upload CSV" or "Connect Google Sheets"
 3. Select your data source
 
-### ⚙️ Step 2: Process Data
+### Step 2: Process Data
 1. Choose processing options
 2. Click "Process Data"
 3. Wait for AI analysis
 
-### 📊 Step 3: View Results
+### Step 3: View Results
 1. Explore the processed data
 2. Download results if needed
 3. Perform additional searches
+</details>
 
 ## Setup
 
@@ -104,7 +115,9 @@ An AI-powered data agent that processes data from CSV files or Google Sheets, pe
 
 </details>
 
-## 🎯 Running the Application
+## Running the Application
+<details>
+<summary>Click to expand running and starting instructions</summary>
 
 Run the setup script:
 
@@ -119,45 +132,38 @@ Start the application:
 ```
 
 Access the application at `http://localhost:8501`.
+</details>
+
+## APIs and tools
+<details>
+<summary>Click to expand tech stack</summary>
+  
+### Third-Party API Integrations
+- **Groq API**: Fast LLM inference using Mixtral-8x7B model
+- **SerpAPI**: Web search functionality with structured results
+- **Google Sheets API**: Seamless spreadsheet integration
+
+### Tools & Libraries
+- **Streamlit**: Interactive web interface
+- **Pandas**: Data manipulation and analysis
+- **Python-dotenv**: Environment variable management
+- **Google OAuth2**: Authentication for Google Services
+- **PyYAML**: Configuration management
+
+### Supported Data Formats
+- CSV files (*.csv)
+- Google Sheets
+- Exported results in CSV/Sheets format
+</details>
 
 ## Testing
-
+<details>
+<summary>Click to expand testing Instructions</summary>
+  
 Run the unit tests in the `tests` directory:
 
 ```sh
 python -m unittest discover tests
 ```
-
-## Project Structure
-<details>
-<summary> Click to expand to see the project structure </summary>
-- `config/`: Configuration files
-  - `config.yaml`: Application configuration
-  - `credentials.json`: Google API credentials
-  - `token.json`: OAuth token
-- `src/`: Source code
-  - `dashboard/`: UI components
-    - `ui.py`: Streamlit interface
-  - `services/`: Core services
-    - `csv_handler.py`: CSV file operations
-    - `llm_service.py`: Language model service
-    - `search_service.py`: Search functionality
-    - `sheets_handler.py`: Google Sheets integration
-  - `utils/`: Utility functions
-    - `env_utils.py`: Environment variables
-    - `helpers.py`: Helper functions
-    - `rate_limiter.py`: Rate limiting
-    - `setup.py`: Setup utilities
-  - `main.py`: Application entry point
-- `tests/`: Unit tests
-  - `test_csv_handler.py`
-  - `test_llm_service.py`
-  - `test_search_service.py`
-  - `test_sheets_handler.py`
-  - `test_ui.py`
-- `.env`: Environment variables
-- `README`: Project documentation
-- `requirements.txt`: Dependencies
-- `run.sh`: Run script
-- `setup.sh`: Setup script
 </details>
+
