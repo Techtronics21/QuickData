@@ -2,16 +2,48 @@
 
 An AI-powered data agent that processes data from CSV files or Google Sheets, performs searches using LLMs, and provides insights through a Streamlit interface.
 
+![Main Dashboard](assets/main-dashboard.png)
+
 ## Features
 
 - Upload CSV files or connect to Google Sheets.
 - Perform entity extraction and search using LLMs.
 - Display and download processed data.
 
-## Requirements
+## Screenshots
 
-- Python 3.7 or higher
-- Required packages listed in `requirements.txt`
+### Data Upload
+![Data Upload](assets/data-upload.png)
+*Upload your CSV files or connect to Google Sheets*
+
+### Search Interface
+![Search Interface](assets/search-interface.png)
+*Perform powerful searches using AI*
+
+### Results View
+![Results View](assets/results-view.png)
+*View and analyze processed data*
+
+## Quick Start Guide
+
+Watch our quick demo video to get started:
+
+[![Demo Video](assets/video-thumbnail.png)](https://youtu.be/your-video-id)
+
+### Step 1: Upload Data
+1. Launch the application
+2. Click "Upload CSV" or "Connect Google Sheets"
+3. Select your data source
+
+### Step 2: Process Data
+1. Choose processing options
+2. Click "Process Data"
+3. Wait for AI analysis
+
+### Step 3: View Results
+1. Explore the processed data
+2. Download results if needed
+3. Perform additional searches
 
 ## Setup
 
