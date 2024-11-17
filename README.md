@@ -1,54 +1,79 @@
-# AI Data Agent
+<div align="center">
+
+# QucikData
+
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.40+-red.svg)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 An AI-powered data agent that processes data from CSV files or Google Sheets, performs searches using LLMs, and provides insights through a Streamlit interface.
 
-![Main Dashboard](assets/main-dashboard.png)
+[Features](#features) • [Screenshots](#screenshots) • [Quick Start](#quick-start-guide) • [Setup](#setup) • [Documentation](#project-structure)
 
-## Features
+<img src="assets/main-dashboard.png" alt="Main Dashboard" width="100%"/>
 
-- Upload CSV files or connect to Google Sheets.
-- Perform entity extraction and search using LLMs.
-- Display and download processed data.
+</div>
 
+---
 
-## Data Upload
-![Data Upload](assets/data-upload.png)
-*Upload your CSV files or connect to Google Sheets*
+## ✨ Features
 
-## Data Summary
-![Data Upload](assets/data-customize.png)
-*Select any number of coloumns as you wish*
+- 📊 Upload CSV files or connect to Google Sheets
+- 🔍 Perform entity extraction and search using LLMs
+- 📈 Display and download processed data
 
-## Search Interface
-![Search Interface](assets/search-interface.png)
-*Select the range of data you need to process along with multiple query option*
+## 📸 Screenshots
 
-## Results View
-![Results View](assets/results-view.png)
-*Choose the export option and view and analyze processed data*
+<table style="border-spacing: 0 20px; border-collapse: separate;">
+  <tr>
+    <td width="100%" style="padding: 20px 0;">
+      <img src="assets/data-upload.png" alt="Data Upload" width="100%"/>
+      <p align="center"><i>Data Upload Interface</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" style="padding: 20px 0;">
+      <img src="assets/search-interface.png" alt="Search Interface" width="100%"/>
+      <p align="center"><i>Search Interface</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" style="padding: 20px 0;">
+      <img src="assets/results-view.png" alt="Results View" width="100%"/>
+      <p align="center"><i>Results View</i></p>
+    </td>
+  </tr>
+</table>
 
-## Quick Start Guide
+## 🚀 Quick Start Guide
 
-Watch our quick demo video to get started:
+<details open>
+<summary>Watch our quick demo video</summary>
+<br>
+<a href="https://youtu.be/your-video-id">
+    <img src="assets/video-thumbnail.png" alt="Demo Video" width="100%"/>
+</a>
+</details>
 
-[![Demo Video](assets/video-thumbnail.png)](https://youtu.be/your-video-id)
-
-### Step 1: Upload Data
+### 📥 Step 1: Upload Data
 1. Launch the application
 2. Click "Upload CSV" or "Connect Google Sheets"
 3. Select your data source
 
-### Step 2: Process Data
+### ⚙️ Step 2: Process Data
 1. Choose processing options
 2. Click "Process Data"
 3. Wait for AI analysis
 
-### Step 3: View Results
+### 📊 Step 3: View Results
 1. Explore the processed data
 2. Download results if needed
 3. Perform additional searches
 
-## Setup
+## 🛠️ Setup
+
+<details>
+<summary>Click to expand setup instructions</summary>
 
 1. Clone the repository.
 
@@ -77,7 +102,9 @@ Watch our quick demo video to get started:
 
 6. Configure the application settings in `config.yaml`.
 
-## Running the Application
+</details>
+
+## 🎯 Running the Application
 
 Run the setup script:
 
@@ -102,7 +129,8 @@ python -m unittest discover tests
 ```
 
 ## Project Structure
-
+<details>
+<summary> Click to expand to see the project structure </summary>
 - `config/`: Configuration files
   - `config.yaml`: Application configuration
   - `credentials.json`: Google API credentials
@@ -132,3 +160,4 @@ python -m unittest discover tests
 - `requirements.txt`: Dependencies
 - `run.sh`: Run script
 - `setup.sh`: Setup script
+</details>
